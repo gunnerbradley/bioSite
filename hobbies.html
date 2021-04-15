@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioSite</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <nav >
+        <div class="dropdown">
+            <a onclick="toggleNav()" class="fa fa-bars" id="dropbtn"></a>
+            <div id="dropdownMenu" class="dropdown-content">
+              <a href="./index.html">Home</a>
+              <a href="./about.html">About</a>
+              <a href="#">Hobbies</a>
+            </div>
+          </div>
+        </div>
+    </nav>
+
+    <div class="socials-container ">
+        <a href="https://twitter.com/Nadrojo" class="fab fa-twitter socials" target="_blank"></a>
+        <a href="https://newplayexchange.org/users/7292/jordan-ford" class="fa fa-feather-alt socials" target="_blank"></a>
+        <a href="https://www.jordanmarieford.com/" class="fas fa-address-card socials" target="_blank"></a>
+    </div>
+
+    <h2 class="padding-set titles">About</h2>
+    <div class="padding-set hobbies">
+
+        <div class="container-flex hobbies-card">
+            <img src="./src/img/reading.JPG" alt="Jordan Reading">
+            <div>
+                <h3>Reading</h3>
+                <p>Jordan is an avid reader and often enjoys doing so on her morning commute to work. She’s partial to books with strong female protagonists that have been made into TV series, such as “Handmaid's Tale”, “Big Little Lies”, “Sharp Objects”, and others.</p>
+            </div>
+        </div>
+
+        <div class="container-flex hobbies-card">
+            <div>
+                <h3>Fashion</h3>
+                <p>Having studied costume design in school, Jordan has always enjoyed clothing and fashion. She’d often sneak the latest styles in her backpack to school, and change in the bathroom to avoid the scowl of her mother.</p>
+            </div>
+            <img src="./src/img/fashion.JPG" alt="Jordan">
+        </div>
+
+        <div class="container-flex hobbies-card">
+            <img src="./src/img/socializing.JPG" alt="Jordan Reading">
+            <div>
+                <h3>Socializing</h3>
+                <p>Being blessed with the “gift of the gab” Jordan loves going out with her friends and meeting new ones. She’s not a nosy busybody, but she enjoys “spilling the tea” on occasion. She is inspired by the girls she’s met in the bathrooms at bars, and collectively wishes them all well.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <footer class="container-flex">
+        <div class="container-flex">
+            <a href="./index.html">Home</a>
+            <a href="./about.html">About</a>
+            <a href="#">Hobbies</a>
+            <a href="https://twitter.com/Nadrojo" target="_blank">Twitter</a>
+            <a href="https://newplayexchange.org/users/7292/jordan-ford" target="_blank">New Play Exchange</a>
+            <a href="https://www.jordanmarieford.com/" target="_blank">Personal Site</a>
+        </div>
+        <div class="container-flex">
+            <p>200 Web Fundamentals - Gunner Bradley 2021</p>
+        </div>
+    </footer>
+
+
+
+
+    <script>
+        // Toggler for NavMenu
+            function toggleNav() {
+              document.getElementById("dropdownMenu").classList.toggle("show");
+              document.getElementById("dropbtn").classList.toggle("dropbtnopen");
+            }
+            
+            window.onclick = (event) => {
+              if (!event.target.matches('#dropbtn')) {
+                let dropdowns = document.getElementsByClassName("dropdown-content");
+                let menubtn = document.getElementsByClassName("dropbtn");
+    
+                for (i = 0; i < dropdowns.length; i++) {
+                  let openDropdown = dropdowns[i];
+                  if (openDropdown.classList.contains('show') ) {
+                    openDropdown.classList.remove('show');
+                    document.getElementById("dropbtn").classList.toggle("dropbtnopen");
+                  }
+                }
+              }
+            }
+        // End Toggler
+        </script>
+    </body>
+    </html>
+    
