@@ -145,7 +145,7 @@ nav{
   font-size: 36px;
   justify-content: center;
   align-items: center;
-  padding-top: 25px;
+  padding-top: 25px;;
 }
 
 #sub-banner-one h2{ margin: 25px; }
@@ -160,6 +160,7 @@ nav{
   width: 300px;
   box-shadow: -25px 25px #EFD082;
   z-index: 1;
+  margin-right: 25px;
 }
 
 .quote-card{
@@ -270,6 +271,10 @@ footer a{
     flex-direction: column;
     text-align: center;
   }
+  #sub-banner-two img{
+    margin-right: 0;
+  }
+
   .hobbies-card:nth-child(2) img{
     order: 1;
   }
