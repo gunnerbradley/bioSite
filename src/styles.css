@@ -145,6 +145,7 @@ nav{
   font-size: 36px;
   justify-content: center;
   align-items: center;
+  padding-top: 25px;
 }
 
 #sub-banner-one h2{ margin: 25px; }
