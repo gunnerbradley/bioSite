@@ -6,9 +6,7 @@ body{
   margin: 0;
   padding: 0;
 }
-a:hover{ 
-  transform: scale(1.15);
-}
+a:hover{ transform: scale(1.1); }
 
 hr{ 
   border: 5px solid white;
@@ -18,9 +16,10 @@ hr{
 
 /* UTILITY CLASSES */
 
-.padding-set{padding: 2vh 8.3vw 2vh 8.3vw }
+.margin-set{ margin: 2vh 8.3vw 2vh 8.3vw; }
 
 .container-flex { display:flex; }
+
 .container-block { display:block; }
 
 .btn {
@@ -29,11 +28,13 @@ hr{
   border-radius: 50px;
   background: #D894EA;
   color: #fffffF;
+  margin-top: 25px;
   padding: 10px 50px 10px 50px;
   text-decoration: none;
   text-align: center;
 }
-.btn:hover { font-size: 28px; }
+
+.btn:hover { font-size: 26px; }
 
 .imgCaption{
   display: block;
@@ -45,7 +46,7 @@ hr{
 }
 .socials-container{
   display: block;
-  position: absolute;
+  position: fixed;
   overflow: auto;
   top: 30%;
   right: 10px;
@@ -66,16 +67,21 @@ hr{
   text-align: center;
   width: 50%;
   margin-bottom: 50px;
+  padding-top: 25px;
 }
 .titles{
   font-size: 64px;
   padding-bottom: 0;
+ 
 }
 
 /* NAV STYLES */
 nav{ 
-    height: 50px; 
-    font-family: 'Raleway', sans-serif; 
+  height: 50px; 
+  font-family: 'Raleway', sans-serif; 
+  position: fixed;
+  right: 10px;
+  z-index: 1;
 }
 
 #dropbtn {
@@ -120,7 +126,7 @@ nav{
   border-radius: 10px;
 }
 #title{
-  margin-top: 25%;
+  padding-top: 25%;
   font-family: 'Playfair Display', serif;
   font-size: 64px;
   background: #fffffF;
@@ -128,7 +134,10 @@ nav{
 
 /* SUB-BANNER STYLES */
 
-#sub-banner{ background-color: #D894EA; }
+#sub-banner{ 
+  background-color: #D894EA; 
+  padding-bottom: 50px;
+}
 
 #sub-banner-one{
   color: white;
@@ -144,7 +153,6 @@ nav{
   width: 300px;
   border-radius: 500px;
   box-shadow: 20px 0px #9ec97a;
-  
 }
 
 #sub-banner-two img{
@@ -164,19 +172,20 @@ nav{
   font-family: 'Playfair Display', serif; 
   font-style: italic;
   font-weight: 200;
-  font-size: 20px;
-  text-decoration: underline;
+  font-size: 25px;
+  margin: 0;
+  
 }
 .quote-card p:nth-child(2){
   font-family: 'Raleway', sans-serif; 
-  line-height: 2em;
+  line-height: 1.5em;
   font-size: 30px;
   font-weight: 600;
   padding-left: 20px;
   padding-right: auto;
 }
 
-/* ************ HOME STYLES END *********** */
+
 /* ************ ABOUT STYLES START *********** */
 
 #about img{
@@ -189,13 +198,15 @@ nav{
   text-align: left;
 }
 
-/* ************ ABOUT STYLES END *********** */
+
 /* ************ HOBBIES STYLES START *********** */
 .hobbies-card{
   font-family: 'Raleway', sans-serif;
   font-size: 14px;
   justify-content: center;
   align-items: center;
+  display: flex;  
+  
 }
 .hobbies-card img{
   width: 300px;
@@ -224,13 +235,7 @@ nav{
 }
 
 
-/* ************ HOBBIES STYLES END *********** */
-
-
-
-
-
-/* FOOTER */
+/* ************ FOOTER *********** */
 footer{
   justify-content: space-between;
   align-items: center;
@@ -241,17 +246,19 @@ footer{
 }
 
 footer a{
-  padding-right: 10px;
+  padding: 10px;
 }
 
 
+/* ************MEDIA QUERIES *********** */
 @media screen and (max-width: 1200px) {
   #about img{
     width: 400px;
     border-radius: 15px;
   }
 }
-@media screen and (max-width: 900px) {
+
+@media screen and (max-width: 970px) {
   .quote-card p:nth-child(2){
     font-family: 'Raleway', sans-serif; 
     font-size: 20px;
@@ -259,18 +266,31 @@ footer a{
   .container-flex {
     width: auto;
     height: auto;
-    display: block;
+    flex-direction: column;
     text-align: center;
+  }
+  .hobbies-card:nth-child(2) img{
+    order: 1;
+  }
+  .order-one{
+     order: 2;
   }
   .two-col-section{
     width: auto;
   }
+  footer .container-flex{flex-direction: row;}
 }
 
 @media screen and (max-width: 600px) {
-    
-    #sub-banner-one{
-      display: none;
-    }
-    hr{display: none;}
+  #sub-banner-one { display: none; }
+
+  hr { display: none; }
+
+  .quote-card { 
+    padding: 10px;
+    width: 90%;
+  }
+  .socials-container{
+    right: 0px;
+  }
 }
