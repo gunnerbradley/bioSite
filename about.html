@@ -12,76 +12,68 @@
 </head>
 <body>
     <nav>
-        <div class="dropdown">
-            <a onclick="toggleNav()" class="fa fa-bars" id="dropbtn"></a>
-            <div id="dropdownMenu" class="dropdown-content">
-              <a href="./index.html">Home</a>
-              <a href="#">About</a>
-              <a href="./hobbies.html">Hobbies</a>
-            </div>
-          </div>
-        </div>
-    </nav>
-
-    <div class="socials-container ">
-      <a href="https://twitter.com/Nadrojo" class="fab fa-twitter socials" target="_blank"></a>
-      <a href="https://newplayexchange.org/users/7292/jordan-ford" class="fa fa-feather-alt socials" target="_blank"></a>
-      <a href="https://www.jordanmarieford.com/" class="fas fa-address-card socials" target="_blank"></a>
-  </div>
-
-    <h2 class="margin-set titles">About</h2>
-    <div class="container-flex margin-set" id="about">
-        
-        <div class="two-col-section ">
-            <img src="./src/img/jordan-portrait.jpg" alt="Headshot photo of Jordan Ford">    
-        </div>
-        <div class="two-col-section">
-            <p>Jordan Marie Ford simply does not dream of labor, but as a Chicago based playwright and actress, she’s produced works for several theaters throughout the area. Self-described as a petite person with a mid size amount of self worth who enjoys being distracted from self reflection, she dreams of a future where she can sit by a big open window and .... write I guess? It’s also fair to mention she's quite a comedian, if you couldn’t tell.</p>
-            <p>Jordan was born and raised in Dallas, TX, and at a young age dreamed of being a pop star, Or in a tv show that features cutaway scenes with a little animated version of her that wore slide on platform sandals. Thanks Lizzie McGuire! As she grew older though, it was eventually discovered that she couldn’t sing and ultimately choose the tv star route. She attended a downtown Dallas arts magnet high school where she received her formal training and later her bachelor's degree in live performance studies.After moving to Chicago, her career as an actress and playwright started to take off. When pressed on the source of her success she responded“...everyone seemed to like the things I wrote. I loved troupes and references and finding ways to surprise a reader. Then I went to theater school and thankfully got my really bad plays out of the way in highschool.” However, the pandemic hit pretty hard and many of her projects were put on hold. Currently she longs for the day that she can once again join the hoards of people locating their Lyft’s after a very athletic night of dancing.</p>
-            <p>After moving to Chicago, her career as an actress and playwright started to take off. When pressed on the source of her success she responded“...everyone seemed to like the things I wrote. I loved troupes and references and finding ways to surprise a reader. Then I went to theater school and thankfully got my really bad plays out of the way in highschool.” However, the pandemic hit pretty hard and many of her projects were put on hold. Currently she longs for the day that she can once again join the hoards of people locating their Lyft’s after a very athletic night of dancing.</p>
-            <a href="./hobbies.html" class="btn">Hobbies</a> 
-        </div>
-        
-    </div>
-
-    <footer class="container-flex">
-      <div class="container-flex">
+      <div class="dropdown">
+        <a onclick="toggleNav()" class="fa fa-bars" id="dropbtn"></a>
+        <div id="dropdownMenu" class="dropdown-content">
           <a href="./index.html">Home</a>
           <a href="#">About</a>
           <a href="./hobbies.html">Hobbies</a>
-          <a href="https://twitter.com/Nadrojo" target="_blank">Twitter</a>
-          <a href="https://newplayexchange.org/users/7292/jordan-ford" target="_blank">New Play Exchange</a>
-          <a href="https://www.jordanmarieford.com/" target="_blank">Personal Site</a>
+        </div>
       </div>
-      <div class="container-flex">
-          <p>200 Web Fundamentals - Gunner Bradley 2021</p>
+    </nav>
+    <div class="socials-container">
+      <a href="https://twitter.com/Nadrojo" class="fab fa-twitter socials" target="_blank"></a>
+      <a href="https://newplayexchange.org/users/7292/jordan-ford" class="fa fa-feather-alt socials" target="_blank"></a>
+      <a href="https://www.jordanmarieford.com/" class="fas fa-address-card socials" target="_blank"></a>
+    </div>
+      <h2 class="padding-set titles">About</h2>
+      <div class="container-flex padding-set" id="about">
+          <div class="two-col-section ">
+              <img src="./src/img/jordan-portrait.jpg" alt="Headshot photo of Jordan Ford">    
+          </div>
+          <div class="two-col-section">
+              <p>Jordan Marie Ford simply does not dream of labor, but as a Chicago based playwright and actress, she’s produced works for several theaters throughout the area. Self-described as a petite person with a mid size amount of self worth who enjoys being distracted from self reflection, she dreams of a future where she can sit by a big open window and .... write I guess? It’s also fair to mention she's quite a comedian, if you couldn’t tell.</p>
+              <p>Jordan was born and raised in Dallas, TX, and at a young age dreamed of being a pop star, Or in a tv show that features cutaway scenes with a little animated version of her that wore slide on platform sandals. Thanks Lizzie McGuire! As she grew older though, it was eventually discovered that she couldn’t sing and ultimately choose the tv star route. She attended a downtown Dallas arts magnet high school where she received her formal training and later her bachelor's degree in live performance studies.After moving to Chicago, her career as an actress and playwright started to take off. When pressed on the source of her success she responded“...everyone seemed to like the things I wrote. I loved troupes and references and finding ways to surprise a reader. Then I went to theater school and thankfully got my really bad plays out of the way in highschool.” However, the pandemic hit pretty hard and many of her projects were put on hold. Currently she longs for the day that she can once again join the hoards of people locating their Lyft’s after a very athletic night of dancing.</p>
+              <p>After moving to Chicago, her career as an actress and playwright started to take off. When pressed on the source of her success she responded“...everyone seemed to like the things I wrote. I loved troupes and references and finding ways to surprise a reader. Then I went to theater school and thankfully got my really bad plays out of the way in highschool.” However, the pandemic hit pretty hard and many of her projects were put on hold. Currently she longs for the day that she can once again join the hoards of people locating their Lyft’s after a very athletic night of dancing.</p>
+              <a href="./hobbies.html" class="btn">Hobbies</a> 
+          </div> 
       </div>
-  </footer>
-
-
-    <script>
-        // Toggler for NavMenu
-            function toggleNav() {
-              document.getElementById("dropdownMenu").classList.toggle("show");
-              document.getElementById("dropbtn").classList.toggle("dropbtnopen");
-            }
-            
-            window.onclick = (event) => {
-              if (!event.target.matches('#dropbtn')) {
-                let dropdowns = document.getElementsByClassName("dropdown-content");
-                let menubtn = document.getElementsByClassName("dropbtn");
-    
-                for (i = 0; i < dropdowns.length; i++) {
-                  let openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show') ) {
-                    openDropdown.classList.remove('show');
-                    document.getElementById("dropbtn").classList.toggle("dropbtnopen");
+      <footer class="container-flex">
+        <div class="container-flex">
+            <a href="./index.html">Home</a>
+            <a href="#">About</a>
+            <a href="./hobbies.html">Hobbies</a>
+            <a href="https://twitter.com/Nadrojo" target="_blank">Twitter</a>
+            <a href="https://newplayexchange.org/users/7292/jordan-ford" target="_blank">New Play Exchange</a>
+            <a href="https://www.jordanmarieford.com/" target="_blank">Personal Site</a>
+        </div>
+        <div class="container-flex">
+            <p>200 Web Fundamentals - Gunner Bradley 2021</p>
+        </div>
+      </footer>
+      <script>
+          // Toggler for NavMenu
+              function toggleNav() {
+                document.getElementById("dropdownMenu").classList.toggle("show");
+                document.getElementById("dropbtn").classList.toggle("dropbtnopen");
+              }
+              
+              window.onclick = (event) => {
+                if (!event.target.matches('#dropbtn')) {
+                  let dropdowns = document.getElementsByClassName("dropdown-content");
+                  let menubtn = document.getElementsByClassName("dropbtn");
+      
+                  for (i = 0; i < dropdowns.length; i++) {
+                    let openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show') ) {
+                      openDropdown.classList.remove('show');
+                      document.getElementById("dropbtn").classList.toggle("dropbtnopen");
+                    }
                   }
                 }
               }
-            }
-        // End Toggler
-        </script>
+          // End Toggler
+      </script>
     </body>
     </html>
     

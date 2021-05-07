@@ -1,109 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BioSite</title>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="./src/styles.css">
-</head>
-<body>
-    <nav>
-        <div class="dropdown">
-            <a onclick="toggleNav()" class="fa fa-bars" id="dropbtn"></a>
-            <div id="dropdownMenu" class="dropdown-content">
-              <a href="#">Home</a>
-              <a href="./about.html">About</a>
-              <a href="./hobbies.html">Hobbies</a>
-            </div>
-          </div>
-        </div>
-    </nav>
-
-    <div class="socials-container ">
-        <a href="https://twitter.com/Nadrojo" class="fab fa-twitter socials" target="_blank"></a>
-        <a href="https://newplayexchange.org/users/7292/jordan-ford" class="fa fa-feather-alt socials" target="_blank"></a>
-        <a href="https://www.jordanmarieford.com/" class="fas fa-address-card socials" target="_blank"></a>
-    </div>
-
-    <div class="container-flex margin-set" >
-        <div class="two-col-section">
-            <div id="bannerCircle"></div>
-            <h1 id="title">Jordan Marie Ford</h1>
-            <div id="bannerSquare"></div>
-        </div>
-        <div class="two-col-section" >
-            <img src="./src/img/IMG_0623.jpg" alt="Image of Jordan Ford at Chicago's Wunder Museum in 2019" id="bannerImg">
-            <p class="imgCaption">*pretending to be shocked* - Wunder Museum 2019</p>
-            <a href="./about.html" class="btn">Her Story</a> 
-        </div>
-    </div>
-
-    <div id="sub-banner">
-        <div id="sub-banner-one" class="container-flex">
-            <h2>Actress</h2>
-            <div>
-                <img src="./src/img/IMG_0450.JPG" alt="Digital illustration titled 'Jordan on the Go' by artist Nat McRea"> 
-                <p class="imgCaption">*<em>Jordan on the Go</em> - by Nat McRea*</p>
-            </div>   
-            <h2>Writer</h2>    
-        </div>  
-          
-        <div class="container-flex margin-set" id="sub-banner-two" >
-            <div>
-                <img src="./src/img/IMG_0624.JPG" alt=" Five year old portrait of Jordan Ford">
-                <p class="imgCaption">*age 5 - 2001*</p>
-            </div>
-            <div class="quote-card">
-                <p class="quote-card">What was your childhood dream job?</p>
-                <p class="quote-card">Easy. Pop star. Or a star in a tv show where there were cutaway scenes with a little animated version of me that wore slide on platform sandals. Thanks Lizzie McGuire.</p>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>BioSite</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+        <link rel="stylesheet" href="./src/styles.css">
+    </head>
+    <body>
+        <nav>
+            <div class="dropdown">
+                <a onclick="toggleNav()" class="fa fa-bars" id="dropbtn"></a>
+                <div id="dropdownMenu" class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./hobbies.html">Hobbies</a>
             </div>
         </div>
-    </div>
+        </nav>
 
-    <footer class="container-flex">
-        <div class="container-flex">
-            <a href="#">Home</a>
-            <a href="./about.html">About</a>
-            <a href="./hobbies.html">Hobbies</a>
-            <a href="https://twitter.com/Nadrojo" target="_blank">Twitter</a>
-            <a href="https://newplayexchange.org/users/7292/jordan-ford" target="_blank">New Play Exchange</a>
-            <a href="https://www.jordanmarieford.com/" target="_blank">Personal Site</a>
+        <div class="socials-container ">
+            <a href="https://twitter.com/Nadrojo" class="fab fa-twitter socials" target="_blank"></a>
+            <a href="https://newplayexchange.org/users/7292/jordan-ford" class="fa fa-feather-alt socials" target="_blank"></a>
+            <a href="https://www.jordanmarieford.com/" class="fas fa-address-card socials" target="_blank"></a>
         </div>
-        <div class="container-flex">
-            <p>200 Web Fundamentals - Gunner Bradley 2021</p>
+
+        <div class="container-flex padding-set" >
+            <div class="two-col-section">
+                <div id="bannerCircle"></div>
+                <h1 id="title">Jordan Marie Ford</h1>
+                <div id="bannerSquare"></div>
+            </div>
+            <div class="two-col-section" >
+                <img src="./src/img/IMG_0623.jpg" alt="Image of Jordan Ford at Chicago's Wunder Museum in 2019" id="bannerImg">
+                <p class="imgCaption">*pretending to be shocked* - Wunder Museum 2019</p>
+                <a href="./about.html" class="btn">Her Story</a> 
+            </div>
         </div>
-    </footer>
-
-
-
-
-
-    <script>
-    // Toggler for NavMenu
-        function toggleNav() {
-          document.getElementById("dropdownMenu").classList.toggle("show");
-          document.getElementById("dropbtn").classList.toggle("dropbtnopen");
-        }
-        
-        window.onclick = (event) => {
-          if (!event.target.matches('#dropbtn')) {
-            let dropdowns = document.getElementsByClassName("dropdown-content");
-            let menubtn = document.getElementsByClassName("dropbtn");
-
-            for (i = 0; i < dropdowns.length; i++) {
-              let openDropdown = dropdowns[i];
-              if (openDropdown.classList.contains('show') ) {
-                openDropdown.classList.remove('show');
-                document.getElementById("dropbtn").classList.toggle("dropbtnopen");
-              }
+        <div id="sub-banner" class="padding-set">
+            <div id="sub-banner-one" class="container-flex">
+                <h2>Actress</h2>
+                <div>
+                    <img src="./src/img/IMG_0450.JPG" alt="Digital illustration titled 'Jordan on the Go' by artist Nat McRea"> 
+                    <p class="imgCaption">*<em>Jordan on the Go</em> - by Nat McRea*</p>
+                </div>   
+                <h2>Writer</h2>    
+            </div>  
+            <hr>
+            <div class="container-flex" id="sub-banner-two" >
+                <div>
+                    <img src="./src/img/IMG_0624.JPG" alt="Five year old portrait of Jordan Ford">
+                    <p class="imgCaption">*age 5 - 2001*</p>
+                </div>
+                <div class="quote-card">
+                    <p class="quote-card">What was your childhood dream job?</p>
+                    <p class="quote-card">Easy. Pop star. Or a star in a tv show where there were cutaway scenes with a little animated version of me that wore slide on platform sandals. Thanks Lizzie McGuire.</p>
+                </div>
+            </div>
+        </div>
+        <footer class="container-flex">
+            <div class="container-flex">
+                <a href="#">Home</a>
+                <a href="./about.html">About</a>
+                <a href="./hobbies.html">Hobbies</a>
+                <a href="https://twitter.com/Nadrojo" target="_blank">Twitter</a>
+                <a href="https://newplayexchange.org/users/7292/jordan-ford" target="_blank">New Play Exchange</a>
+                <a href="https://www.jordanmarieford.com/" target="_blank">Personal Site</a>
+            </div>
+            <div class="container-flex">
+                <p>200 Web Fundamentals - Gunner Bradley 2021</p>
+            </div>
+        </footer>
+        <script>
+        // Toggler for NavMenu
+            function toggleNav() {
+            document.getElementById("dropdownMenu").classList.toggle("show");
+            document.getElementById("dropbtn").classList.toggle("dropbtnopen");
             }
-          }
-        }
-    // End Toggler
-    </script>
-</body>
+            
+            window.onclick = (event) => {
+            if (!event.target.matches('#dropbtn')) {
+                let dropdowns = document.getElementsByClassName("dropdown-content");
+                let menubtn = document.getElementsByClassName("dropbtn");
+
+                for (i = 0; i < dropdowns.length; i++) {
+                let openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show') ) {
+                    openDropdown.classList.remove('show');
+                    document.getElementById("dropbtn").classList.toggle("dropbtnopen");
+                }
+                }
+            }
+            }
+        // End Toggler
+        </script>
+    </body>
 </html>
