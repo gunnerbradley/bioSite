@@ -199,7 +199,12 @@ nav{
   font-size: 14px;
   justify-content: center;
   align-items: center;
+  display: flex;
+  flex-direction: row;
 }
+
+.hobbies-card p { max-width: 500px; }
+
 .hobbies-card img{
   width: 300px;
   margin: 20px;
@@ -213,7 +218,14 @@ nav{
 .hobbies-card:nth-child(2) img{
   filter: drop-shadow(16px 16px 10px black);
   clip-path: polygon(50% 0, 0 100%, 100% 100%);
-  border-bottom: 20px solid #D894EA;;
+  border-bottom: 20px solid #D894EA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  order: 1;
+}
+.hobbies-card div:nth-child(1){
+  order: 2;
 }
 
 .hobbies-card:nth-child(3) img{ box-shadow: -20px 20px#EFD082; }
@@ -250,11 +262,24 @@ footer a{ padding-right: 10px;}
   .container-flex {
     width: auto;
     height: auto;
-    display: block;
+    
     text-align: center;
+    flex-direction: column;
+    justify-content: center;
   }
   .two-col-section{ width: auto; }
+
+  .hobbies-card p { max-width: 100%; }
+
+  .hobbies-card:nth-child(2) img{
+    order: 1;
+  }
+  .hobbies-card div:nth-child(1){
+    order: 2;
+    
+  }
 }
+
 
 @media screen and (max-width: 600px) {
     
